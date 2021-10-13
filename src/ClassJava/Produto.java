@@ -149,7 +149,7 @@ public class Produto {
             printWriter.print(this.nome + ";");
             printWriter.print(this.preco + ";");
             printWriter.print(this.qtd + ";");
-            printWriter.print(this.fornecedor);
+            printWriter.println(this.fornecedor);
 
             printWriter.flush();
             printWriter.close();
