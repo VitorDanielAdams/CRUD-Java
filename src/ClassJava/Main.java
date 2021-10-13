@@ -135,12 +135,12 @@ public class Main {
                 case 1:
                     System.out.println("Escolha qual produto quer deletar");
                     readProd(produtos);
-                    deletar("produtos.txt", String.valueOf(produtos.get(entrada.nextInt() - 1)));
+                    deletar("produtos.txt", produtos.get(entrada.nextInt() - 1).toString());
                 break;
                 case 2:
                     System.out.println("Escolha qual produto quer deletar");
                     readForn(fornecedors);
-
+                    deletar("fornecedores.txt", fornecedors.get(entrada.nextInt() - 1).toString());
                 break;
                 default:
                     System.out.println("Opção Inválida");
@@ -245,10 +245,8 @@ public class Main {
             PrintWriter pw = new PrintWriter(new FileWriter(tempFile));
             String line = null;
 
-            System.out.println(linha);
-
             while ((line = br.readLine()) != null) {
-                if (!line.trim().equals(linha)){
+                if (!line.trim().equals(linha.trim())){
                     pw.println(line);
                     pw.flush();
                 }

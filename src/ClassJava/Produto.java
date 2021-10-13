@@ -132,7 +132,7 @@ public class Produto {
 //                ", cor=" + cor +
 //                ", categoria=" + categoria.getNome() +
 //                ", tamanho=" + tamanho +
-                "" + fornecedor + '\n';
+                "" + fornecedor;
     }
 
     public void salvar(){
